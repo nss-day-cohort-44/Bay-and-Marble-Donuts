@@ -1,0 +1,28 @@
+{
+    "donuts": [
+        {
+            "id": 1,
+            "name": "Chocoholic",
+            "glaze": "Chocolate",
+            "type": "Cronut",
+            "flavor": "Chocolate",
+            "topping": "Chocolate Sprinkles"
+        },
+        {
+            "id": 2,
+            "name": "Strawberry",
+            "glaze": "Strawberry",
+            "type": "Cronut",
+            "flavor": "Strawberry",
+            "topping": "Rainbow Sprinkles"
+        },
+        {
+            "id": 3,
+            "name": "Red Velvet Cake",
+            "glaze": "Plain",
+            "type": "Cake",
+            "flavor": "Read Velvet",
+            "topping": "Red Velvet cake crumbs"
+        }
+    ]
+}
