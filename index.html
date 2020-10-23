@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
     <title>Bay & Marble's Donuts</title>
 </head>
+
 <body>
-    <article class="donut__list"></article>
+    <div class="nav">
+        <img class="nav__logo" src="./bay-marble-logo.PNG" alt="Bay and Marble Donuts Logo">
+    </div>
+    <main class="container">
+        <div class="imageContainer">
+            <img class="marble-image" src="./bay-and-marble.PNG" alt="Bay and Marble Donuts Logo">
+        </div>
+        <div class="formContainer">
+            <h3>Create a new Donut! 😊</h3>
+            <form action="" class="donutForm">
+                <fieldset>
+                    <label for="name">Name:</label>
+                    <input type="text" id="donutName">
+                </fieldset>
+                <fieldset>
+                    <label for="glaze">Glaze:</label>
+                    <input type="text" id="donutGlaze">
+                </fieldset>
+                <fieldset>
+                    <label for="type">Type:</label>
+                    <input type="text" id="donutType">
+                </fieldset>
+                <fieldset>
+                    <label for="flavor">Flavor:</label>
+                    <input type="text" id="donutFlavor">
+                </fieldset>
+                <fieldset>
+                    <label for="topping">Topping:</label>
+                    <input type="text" id="donutTopping">
+                </fieldset>
+            </form>
+            <div class="btnContainer">
+                <button>Create Donut!</button>
+            </div>
+        </div>
+        <article class="donutContainer"></article>
+    </main>
 
     <script type="module" src="./scripts/main.js"></script>
 </body>
+
 </html>

@@ -7,7 +7,7 @@ import { DonutHTML } from "./Donut.js"
 // a function that gets exported so main.js can execute it
 export const populateDonutList = () => {
     // we need to know what html element to reference to put donuts in
-    const donutContainer = document.querySelector(".donut__list")
+    const donutContainer = document.querySelector(".donutContainer")
     // store what useDonuts returns into a variable (the array of copied donuts)
     const arrayOfDonuts = useDonuts()
 
@@ -20,7 +20,7 @@ export const populateDonutList = () => {
     }
 
     // we need to put the list of donuts in the donutContainer
-    donutContainer.innerHTML += `<div class="coolStyles">${buildDonutList}</div>`
+    donutContainer.innerHTML += `<div class="donut__list">${buildDonutList}</div>`
     console.log("GOOD JOB! 👍")
 }
 
