@@ -3,7 +3,37 @@
     (rendering === putting the form on the DOM)
 */
 
+import { createDonut } from "./DonutDataProvider.js"
+
 const contentTarget = document.querySelector(".formContainer")
+const eventHub = document.querySelector(".container")
+
+eventHub.addEventListener("click", (eventObj) => {
+
+    // check to see if the click was triggered by the saveDonut button
+    if (eventObj.target.id === "saveDonut") {
+
+        // I need the user input from all the form fields in donut form
+        // AKA get values of each input field
+        const donutName = document.querySelector("#donutName").value
+        const donutGlaze = document.querySelector("#donutGlaze").value
+        const donutType = document.querySelector("#donutType").value
+        const donutFlavor = document.querySelector("#donutFlavor").value
+        const donutTopping = document.querySelector("#donutTopping").value
+
+        // turn user input values into a donut object to be sent to API
+        const newDonut = {
+            name: donutName,
+            glaze: donutGlaze,
+            type: donutType,
+            flavor: donutFlavor,
+            topping: donutTopping
+        }
+
+        // send that donut to the API
+        createDonut(newDonut)
+    }
+})
 
 // Function whose sole purpose is to render the form for adding donuts.
 // We export THIS function so nobody can access the real render()
@@ -41,7 +71,7 @@ const render = () => {
                 </fieldset>
             </form>
             <div class="btnContainer">
-                <button>Create Donut!</button>
+                <button id="saveDonut">Create Donut!</button>
             </div>
     `
 }
