@@ -1,3 +1,90 @@
 body {
+    margin: 0;
     background-color: goldenrod;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: left;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.nav__logo {
+    width: 5%;
+    border-radius: 2%;
+    margin: .25em;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+}
+.marble-image {
+    width: 25%;
+    margin: 1em;
+    border-radius: 2em;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.formContainer {
+    align-self: center;
+    width: 50%;
+    background-color: lightseagreen;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.formContainer h3 {
+    align-self: center;
+    font-size: xx-large;
+    margin: .25em;
+}
+.btnContainer {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.btnContainer button {
+    margin: .5em;
+}
+
+.donutForm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.donutForm fieldset {
+    border: 0;
+}
+.donutForm label {
+    font-size: larger;
+    font-weight: 700;
+}
+
+.donut__list{
+    margin: 2em .5em .5em .5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.donut__card {
+    display: flex;
+    background-color: lightsalmon;
+    flex-direction: column;
+    width: 30%;
+    font-size: x-large;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.donut__card h4 {
+    align-self: center;
+}
+.donut__card p {
+    margin: .15em;
 }
