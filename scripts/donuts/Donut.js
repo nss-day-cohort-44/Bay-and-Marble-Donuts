@@ -4,11 +4,11 @@
 export const DonutHTML = (singleDonutObject) => {
     return `
         <section class="donut__card">
-            <p>Name: ${singleDonutObject.name}</p>
-            <p>Glaze: ${singleDonutObject.glaze}</p>
-            <p>Type: ${singleDonutObject.type}</p>
-            <p>Flavor: ${singleDonutObject.flavor}</p>
-            <p>Topping: ${singleDonutObject.topping}</p>
+            <h4 class="donut__name">${singleDonutObject.name}</h4>
+            <p class="donut__glaze">Glaze: ${singleDonutObject.glaze}</p>
+            <p class="donut__type">Type: ${singleDonutObject.type}</p>
+            <p class="donut__flavor">Flavor: ${singleDonutObject.flavor}</p>
+            <p class="donut__topping">Topping: ${singleDonutObject.topping}</p>
         </section>
     `
 }
